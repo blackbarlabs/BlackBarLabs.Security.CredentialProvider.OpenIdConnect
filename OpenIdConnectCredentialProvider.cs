@@ -12,5 +12,11 @@ namespace BlackBarLabs.Security.CredentialProvider.OpenIdConnect
                 success(accessToken) : invalidCredentials("Username and access token do not match");
             return Task.FromResult(returnValue);
         }
+
+        public Task<TResult> UpdateTokenAsync<TResult>(Uri providerId, string username, string token, Func<string, TResult> success, Func<TResult> doesNotExist,
+            Func<TResult> updateFailed)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
