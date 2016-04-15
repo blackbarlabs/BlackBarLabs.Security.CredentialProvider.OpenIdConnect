@@ -18,5 +18,10 @@ namespace BlackBarLabs.Security.CredentialProvider.OpenIdConnect
         {
             throw new NotImplementedException();
         }
+
+        public Task<TResult> GetCredentialsAsync<TResult>(Uri providerId, string username, Func<string, TResult> success, Func<TResult> doesNotExist)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
